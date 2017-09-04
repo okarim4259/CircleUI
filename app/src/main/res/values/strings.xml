@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Circle</string>
+    <string name="usernameHint">Username or email</string>
+    <string name="passwordHint">Enter Password</string>
+    <string name="signIn">Sign In</string>
+    <string name="signUp">Sign Up</string>
+    <string name="forgotPassword">Forgot Password</string>
+    <string name="verticalBorder">|</string>
+    <string name="createAccount">Create Account</string>
+    <string name="fullName">Full Name</string>
+    <string name="nickName">Nickname (only letters and numbers)</string>
+    <string name="emailAddress">Email Address</string>
+    <string name="phoneNumber">Phone Number</string>
+    <string name="gender">Gender</string>
+    <string name="birthday">Birthday</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+
+    <string-array name="months">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+
+
+</resources>

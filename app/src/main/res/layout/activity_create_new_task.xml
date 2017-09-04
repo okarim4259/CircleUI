@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteBG"
+    android:paddingBottom="30dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <!--Main LL -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#fff">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/colorBgPrimary">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="New Task"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/whiteBG"
+                    android:gravity="center"
+                    android:layout_weight="1" />
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Task Title"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/greytext"/>
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:hint="Title"
+                    android:textColorHint="@color/signUpHints" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#ACACAC"
+                android:layout_marginTop="40dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Task Description"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/greytext"/>
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Description"
+                    android:textColorHint="@color/signUpHints"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#ACACAC"
+                android:layout_marginTop="40dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/textholder"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:text="Choose Tag"
+                    android:textColor="@color/greytext"
+                    android:textSize="17dp"
+                    android:textStyle="normal" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
+
+                    <RadioButton
+                        android:id="@+id/erandtag1"
+                        android:layout_width="112dp"
+                        android:layout_height="wrap_content"
+                        android:text="Daily Erand"
+                        android:textColor="@color/greytext"
+                        android:layout_weight="1"/>
+
+                    <RadioButton
+                        android:id="@+id/erandtag2"
+                        android:text="Urgent Erand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/greytext"
+                        android:layout_weight="1"/>
+
+                    <RadioButton
+                        android:id="@+id/erandtag3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Long Erand"
+                        android:textColor="@color/greytext"
+                        android:layout_weight="1"/>
+
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/dailyerandicon"
+                        android:layout_weight="1"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/urgenterand"
+                        android:layout_weight="1"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/longerand"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+            </LinearLayout> <!-- End Choose Tag Layout -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:gravity="center"
+                    android:text="How many people do you want to help you?"
+                    android:textStyle="normal"
+                    android:textColor="@color/greytext"
+                    android:paddingLeft="10dp"/>
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.9"
+                    android:gravity="center"
+                    android:hint="#"
+                    android:textColorHint="@color/signUpHints" />
+
+            </LinearLayout><!--End Num People LL -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Start Date"
+                    android:textStyle="normal"
+                    android:textColor="@color/greytext"
+                    />
+
+                <EditText
+                    android:id="@+id/taskstartdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="MM/DD/YYYY"
+                    android:textColorHint="@color/signUpHints" />
+            </LinearLayout> <!--End Start Date LL -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="End Date"
+                    android:textStyle="normal"
+                    android:textColor="@color/greytext"
+                    />
+
+                <EditText
+                    android:id="@+id/taskenddate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="MM/DD/YYYY"
+                    android:textColorHint="@color/signUpHints" />
+            </LinearLayout> <!--End Start Date LL -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/textholder"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Urgency Degree"
+                android:textSize="17dp"
+                android:textStyle="normal"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:textColor="@color/greytext"
+                android:paddingTop="5dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/urgentdegree"
+                    android:layout_width="112dp"
+                    android:layout_height="wrap_content"
+                    android:text="Urgent"
+                    android:textColor="@color/urgentred"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:id="@+id/norushdegree"
+                    android:text="No Rush"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBgPrimary"
+                    android:layout_weight="1"/>
+
+
+
+
+            </RadioGroup>
+            </LinearLayout> <!-- End Urgency LL -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:paddingBottom="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:gravity="center"
+                    android:text="How much do you want to offer for help?"
+                    android:textStyle="normal"
+                    android:textColor="@color/greytext"
+                    android:paddingLeft="10dp"/>
+
+                <EditText
+                    android:id="@+id/rewardpoints"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.9"
+                    android:gravity="center"
+                    android:hint="Circle Coins"
+                    android:textColorHint="@color/signUpHints" />
+
+            </LinearLayout><!--End Num People LL -->
+
+            <Button
+                android:id="@+id/addnewtask"
+                style="@style/buttonStyle"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:paddingBottom="0dp"
+                android:paddingTop="0dp"
+                android:text="Create New Task"
+                android:textAllCaps="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Back to Cancel"
+                android:textColor="@color/urgentred"
+                android:gravity="center"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout> <!--End Main LL -->
+    </ScrollView>
+</RelativeLayout>

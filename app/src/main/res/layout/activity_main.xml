@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBgPrimary"
+    android:paddingLeft="90dp"
+    android:paddingRight="90dp"
+    android:paddingTop="120dp"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <!--Clean up XML before final draft-->
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.19"
+        android:src="@drawable/default_profile" />
+
+    <EditText
+        android:id="@+id/username"
+        style="@style/editTextStyle"
+        android:layout_weight="0.05"
+        android:ellipsize="start"
+        android:hint="@string/usernameHint"
+        android:inputType="textWebEmailAddress"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/password"
+        style="@style/editTextStyle"
+        android:layout_weight="0.05"
+        android:hint="@string/passwordHint"
+        android:inputType="textWebPassword"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/signinbutton"
+        style="@style/buttonStyle"
+        android:layout_height="30dp"
+        android:onClick="goToMyProfile"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        android:text="@string/signIn" />
+
+    <!--<TextView
+        android:id="@+id/sign_up"
+        android:layout_width="63dp"
+        android:layout_height="wrap_content"
+        android:text="@string/signUp"
+        android:textColor="@android:color/white"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/sign_up"
+        android:layout_width="63dp"
+        android:layout_height="wrap_content"
+        android:text="@string/signUp"
+        android:textColor="@android:color/white"
+        android:textSize="15dp" /> -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/borderstyle_bottom_black"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="150dp"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="signUpNewUser"
+            android:text="@string/signUp"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/verticalborder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/verticalBorder"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+            android:layout_weight="2" />
+
+        <TextView
+            android:id="@+id/forgotpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/forgotPassword"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.05"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+
+        <ImageView
+            android:id="@+id/facebookbutton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:src="@mipmap/facebook_icon" />
+
+        <ImageView
+            android:id="@+id/wechatbutton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:src="@mipmap/wechat_icon" />
+
+        <ImageView
+            android:id="@+id/twitterbutton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:src="@mipmap/twitter_icon" />
+
+        <ImageView
+            android:id="@+id/weibobutton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:src="@mipmap/weibo_icon" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
